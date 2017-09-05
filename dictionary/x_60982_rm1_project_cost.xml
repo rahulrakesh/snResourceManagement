@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_60982_rm1_project" label="Project Cost" max_length="40" name="x_60982_rm1_project_cost" type="collection">
+        <element label="Project Cost" max_length="20" name="project_cost" type="currency"/>
+    </element>
+</database>

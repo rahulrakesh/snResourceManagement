@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_60982_rm1_project</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_60982_rm1_project">project_duration&gt;=100^project_active=true^EQ<item endquery="false" field="project_duration" goto="false" newquery="false" operator="&gt;=" or="false" value="100"/>
+            <item endquery="false" field="project_active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>Record Saved! Project Priority Changed to &#39;Critical&#39;.</p>]]></message>
+        <name>Set Priority Business Rule</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	current.project_priority = "critical";
+	current.u_string_1 = "Some comments";
+	
+	//script to insert record in change_request table
+	var change_request = new GlideRecord('change_request');
+	change_request.initialize();
+	change_request.type = 'Routine';
+	change_request.short_description = current.project_name + " : " + current.project_owner ;
+	change_request.description = current.u_string_1;
+	change_request.state = 1;
+	change_request.insert();
+	
+	gs.addInfoMessage("Change Request created!" + change_request.number);
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-18 00:52:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5eb21c110f000300b6d58fbce1050e2b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Set Priority Business Rule</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Resource Management - dev" source="x_60982_rm1">ece891c10f333200b6d58fbce1050e12</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Resource Management - dev">ece891c10f333200b6d58fbce1050e12</sys_scope>
+        <sys_update_name>sys_script_5eb21c110f000300b6d58fbce1050e2b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-18 01:28:16</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=5eb21c110f000300b6d58fbce1050e2b"/>
+</record_update>

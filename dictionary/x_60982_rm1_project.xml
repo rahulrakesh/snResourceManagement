@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Project" max_length="40" name="x_60982_rm1_project" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Project Id" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Project Active" max_length="40" name="project_active" type="boolean"/>
+        <element label="Project Duration" max_length="40" name="project_duration" type="string"/>
+        <element label="Project Name" max_length="100" name="project_name" type="string"/>
+        <element label="Project Owner" max_length="32" name="project_owner" reference="sys_user" type="reference"/>
+        <element choice="1" label="Project Priority" max_length="40" name="project_priority" type="choice">
+            <choice>
+                <element label="Critical" sequence="0" value="critical"/>
+                <element label="High" sequence="1" value="high"/>
+                <element label="Low" sequence="2" value="low"/>
+                <element label="Trivial" sequence="3" value="trivial"/>
+            </choice>
+        </element>
+        <element label="Project Signed" max_length="40" name="project_signed" type="boolean"/>
+        <element choice="1" label="Project Type" max_length="40" name="project_type" type="choice">
+            <choice>
+                <element label="Development" sequence="0" value="development"/>
+                <element label="Maintenance" sequence="1" value="maintenance"/>
+                <element label="Support" sequence="2" value="support"/>
+                <element label="Finance" sequence="3" value="finance"/>
+                <element label="Administration" sequence="4" value="administration"/>
+            </choice>
+        </element>
+        <element label="Resources Required" max_length="40" name="resources_required" type="integer"/>
+        <element label="Resource Allocated" max_length="40" name="resource_allocated" read_only="true" type="integer"/>
+        <element label="Resource List" max_length="4000" name="resource_list" reference="sys_user" type="glide_list"/>
+        <element label="Resource Required" max_length="40" name="resource_required" type="integer"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="1000" name="u_string_1" type="string"/>
+        <index name="index">
+            <element name="project_owner"/>
+        </index>
+    </element>
+</database>

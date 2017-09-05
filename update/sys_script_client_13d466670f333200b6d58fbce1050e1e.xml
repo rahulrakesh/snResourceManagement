@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_string_1</field>
+        <global>true</global>
+        <messages/>
+        <name>OnSubmit</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	//Type appropriate comment here, and begin script below
+	g_form.clearMessages();
+	
+	/*if(g_form.getValue('project_duration') < 10){
+		g_form.addErrorMessage("Project duration cannnot be less than 10 days");
+		return false;
+	}
+	
+	if(g_form.getValue('project_priority') == ''){
+		g_form.addErrorMessage("Invalid Project Priority");
+		return false;
+	}
+	
+	
+	
+	if(g_form.getValue('project_type') == ''){
+		g_form.addErrorMessage("Invalid Project Type");
+		return false;
+	}
+	
+	var _prjName = g_form.getValue('project_name');
+	
+	if(_prjName != ""){
+		g_form.setValue('project_name', _prjName + " - " + g_form.getValue('number'));
+	}else{
+		g_form.addErrorMessage("Project Name cannot be empty");
+		return false;
+	}
+	
+	
+	
+	if(g_form.getValue('resource_allocated') > g_form.getValue('resource_required')){
+		g_form.addErrorMessage('Resources allocated cannot be more than required');
+		return false;
+	}
+	*/
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-13 01:07:20</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>13d466670f333200b6d58fbce1050e1e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>OnSubmit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Resource Management - dev" source="x_60982_rm1">ece891c10f333200b6d58fbce1050e12</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Resource Management - dev">ece891c10f333200b6d58fbce1050e12</sys_scope>
+        <sys_update_name>sys_script_client_13d466670f333200b6d58fbce1050e1e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-18 00:57:13</sys_updated_on>
+        <table>x_60982_rm1_project</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

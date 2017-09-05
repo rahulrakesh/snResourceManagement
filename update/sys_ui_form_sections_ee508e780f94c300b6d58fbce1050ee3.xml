@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="ee508e780f94c300b6d58fbce1050ee3" sys_domain="global" table="x_60982_rm1_project_cost" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-07-29 05:45:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a504e7c0f94c300b6d58fbce1050edf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_60982_rm1_project_cost" name="x_60982_rm1_project_cost" sys_domain="global" view="Default view">ee508e780f94c300b6d58fbce1050ee3</sys_ui_form>
+            <sys_ui_section caption="Project" display_value="Project" name="x_60982_rm1_project_cost" sys_domain="global" view="Default view">e2508e780f94c300b6d58fbce1050ee6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-07-29 05:45:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-07-29 05:45:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f6504e7c0f94c300b6d58fbce1050ee1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_60982_rm1_project_cost" name="x_60982_rm1_project_cost" sys_domain="global" view="Default view">ee508e780f94c300b6d58fbce1050ee3</sys_ui_form>
+            <sys_ui_section caption="Resources" display_value="Resources" name="x_60982_rm1_project_cost" sys_domain="global" view="Default view">f2504e7c0f94c300b6d58fbce1050ee0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-07-29 05:45:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_60982_rm1_project_cost</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-07-29 05:45:46</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ee508e780f94c300b6d58fbce1050ee3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_60982_rm1_project_cost</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Resource Management - dev" source="x_60982_rm1">ece891c10f333200b6d58fbce1050e12</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Resource Management - dev">ece891c10f333200b6d58fbce1050e12</sys_scope>
+            <sys_update_name>sys_ui_form_sections_ee508e780f94c300b6d58fbce1050ee3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-07-29 05:45:46</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
